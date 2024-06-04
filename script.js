@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
             image.src = 'images/night.jpg';
             masthead.textContent = 'Good Night!';
         }
+
+        // Day of the week extra credit
+        const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const currentDay = daysOfWeek[now.getDay()];
+        document.getElementById('day-of-week').textContent = `Today is ${currentDay}.`;
     }
 
     updateStyles(); // initial call to set the page
