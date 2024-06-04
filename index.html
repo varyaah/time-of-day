@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Time of Day</title>
+	<!-- Link the the js file with the logic -->
+	<script src="script.js"></script>
     <meta name="robots" content="noindex,nofollow">
     <style>
 		* {padding:0; margin:0;}
@@ -39,13 +41,14 @@
 	<header>
 		<h1 class="masthead">Time of Day</h1>
 	</header>
-    <main>
-	 <header><h3>A JavaScript Project by YOUR NAME HERE</h3></header>
-	    <p>Explain what your page does and how it works here!</p>
-	  <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
+    <main id="content">
+	 <header><h3>A JavaScript Project by Varya Hinkel</h3></header>
+	    <p>This web page will dynamically change based on the time of day!</p>
+	  <img src="images/morning.jpg" alt="Time of Day Image" class="flexible">
      <footer>
-      <p><small>&copy; 2022 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+		<!-- Span for the current year substitution -->
+      <p><small>&copy; 2022 - <span id="current-year"></span> by 
+          Varya Hinkel, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
